@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<div class="background">
 <head>
   <title>Berkley project</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -10,9 +11,15 @@
 	<%= render 'layouts/header' %>
 	<div class= "container">
 		<div class= "hero-unit">
-			<%= yield %>
+			<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class:"alert alert-#{name}") %>
+			<% end %>
+			<div class="body">
+				<%= yield %>
+			</div>
 		</div>
 			<%= render 'layouts/footer' %>
 	</div>
 </body>
+</div>
 </html>

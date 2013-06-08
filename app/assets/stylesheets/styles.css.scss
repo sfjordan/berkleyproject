@@ -3,16 +3,34 @@
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
-
+$navbarBackgroundHighlight: LightGray;
+$navbarBackground: LightGray;
+$textColor: white;
 @import 'bootstrap';
 
-body {
-	padding-top: 50px;
-}
+
+
 
 @import 'bootstrap-responsive';
+
+
+html {
+	background: url('http://i.imgur.com/I8pJBHO.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.background{
+	background-color: rgba(0, 0, 0, 0);
+	background: url('http://i.imgur.com/I8pJBHO.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
 
 /* get rid of the default navbar shadow: */
 /*.navbar-inner {
@@ -20,10 +38,22 @@ body {
 	border: 0; 
 }*/
 
+.hero-unit{
+		margin-top: 50px;
+    background-color: rgba(0, 0, 0, .6); /*use rgba and set Opacity to 0 for transparent.*/
+ }
+
+.body{
+	
+	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
+}
+
+
 .footer {
-	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
+	margin-top: 40px;
 	color: $grayLight;
 	a {
-		color: $grayDark;
+		color: $white;
 	}
 }
