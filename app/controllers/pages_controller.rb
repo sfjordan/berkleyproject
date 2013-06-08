@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def Photography
+  def photography
   end
   
 end

@@ -48,7 +48,18 @@ html {
 	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
 }
 
+.form-actions{
+	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
+}
 
+.footerOn{
+	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
+	margin-top: 40px;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
 .footer {
 	background-color: rgba(0, 0, 0, 0); /*use rgba and set Opacity to 0 for transparent.*/
 	margin-top: 40px;
